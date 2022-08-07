@@ -1,0 +1,104 @@
+/* CSS reset */
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+/* Positioning */
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('assets/background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Heebo', sans-serif;
+    color: rgba(0,0,0,.8);
+}
+
+.head, .links {
+    text-align: center;
+}
+
+.profile-card {
+    background-color: hsla(0, 0%, 100%, .5);
+    border-radius: 4px;
+    box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+    width: 600px;
+    max-width: calc(100vw - 10px);
+}
+
+.head, .content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.head, .about {
+    margin-bottom: 3%;
+}
+
+.content {
+    padding: 3% 10%;
+    border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+span {
+    color: rgb(12, 53, 142);
+}
+
+p {
+    font-size: 15px;
+}
+
+img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    padding: 1px;
+    background-color: #666;
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(50%);
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: grayscale(20%);
+}
+
+.profile-image {
+    margin-top: -60px;
+}
+
+.fa {
+    color: #0a14a2;
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(50%);
+    padding: 4px;
+}
+
+.fa:hover {
+    transform: scale(1.1);
+    color: #dc143c;
+}
+
+/* Contact links */
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
